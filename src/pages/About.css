@@ -1,0 +1,185 @@
+/* ===== ABOUT PAGE STYLES ===== */
+
+/* About Header */
+.about-header {
+
+  padding: 120px 0 60px;
+  background: linear-gradient(135deg, #000000 0%, #000000 100%);
+  text-align: center;
+}
+
+/* About Content */
+.about-content {
+  padding: 80px 0;
+  background: var(--white);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.about-text h2 {
+  
+  font-size: 2.5rem;
+  color: var(--charcoal);
+  margin-bottom: 30px;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+/* About Features */
+.about-features {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.about-features h2 {
+  font-size: 2.5rem;
+  color: var(--charcoal);
+  margin-bottom: 60px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+.feature-card {
+  background: var(--white);
+  padding: 40px 30px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+}
+
+.feature-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, var(--primary-color), #ffffff);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.feature-icon i {
+  font-size: 2rem;
+  color: var(--white);
+}
+
+.feature-card h3 {
+  font-size: 1.3rem;
+  color: var(--charcoal);
+  margin-bottom: 15px;
+}
+
+.feature-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* About CTA */
+.about-cta {
+  text-align: center;
+  background: var(--light-grey);
+  padding: 60px 40px;
+  border-radius: var(--border-radius);
+}
+
+.about-cta h2 {
+  font-size: 2.5rem;
+  color: var(--charcoal);
+  margin-bottom: 20px;
+}
+
+.about-cta p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  .about-header {
+    padding: 100px 0 40px;
+  }
+  
+  .about-content {
+    padding: 60px 0;
+  }
+  
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .about-text h2 {
+    font-size: 2rem;
+  }
+  
+  .about-features h2 {
+    font-size: 2rem;
+  }
+  
+  .features-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+  }
+  
+  .about-cta {
+    padding: 40px 20px;
+  }
+  
+  .about-cta h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-text h2 {
+    font-size: 1.8rem;
+  }
+  
+  .about-features h2 {
+    font-size: 1.8rem;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .feature-card {
+    padding: 30px 20px;
+  }
+  
+  .about-cta h2 {
+    font-size: 1.8rem;
+  }
+}

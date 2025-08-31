@@ -1,0 +1,85 @@
+/* ===== HOME PAGE STYLES ===== */
+
+/* Hero Section */
+.hero {
+  padding: 120px 0 80px;
+  background: #000;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  color: #FFF;
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.hero-content { max-width: 500px; }
+
+.hero-title { font-size: 3.5rem; font-weight: 700; color: #FFF; margin-bottom: 20px; line-height: 1.2; }
+
+.hero-subtitle { font-size: 1.2rem; color: #CCC; margin-bottom: 30px; line-height: 1.6; }
+
+.hero-buttons { display: flex; gap: 20px; flex-wrap: wrap; }
+
+.hero-image { text-align: center; }
+
+.hero-img { max-width: 100%; height: auto; border-radius: var(--border-radius); box-shadow: none; }
+
+/* Introduction Section */
+.intro { padding: 80px 0; background: #000; color: #FFF; }
+.intro-content { text-align: center; }
+
+.intro-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-top: 60px; }
+
+.intro-card { background: #000000; padding: 40px 30px; border-radius: var(--border-radius); box-shadow: none; transition: var(--transition); text-align: center; border: 1px solid #000000; }
+
+.intro-card:hover { transform: translateY(-5px); }
+
+.intro-icon { width: 80px; height: 80px; background: #000000; border: 1px solid #000000; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; }
+
+.intro-icon i { font-size: 2rem; color: #FFF; }
+
+.intro-card h3 { font-size: 1.5rem; color: #FFF; margin-bottom: 15px; }
+
+.intro-card p { color: #CCC; line-height: 1.6; }
+
+/* Featured Products Section */
+.featured-products { padding: 80px 0; background: #000; }
+
+.products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; margin-bottom: 40px; }
+
+.featured-cta { text-align: center; margin-top: 40px; }
+
+/* WhatsApp Float Button */
+.whatsapp-float { position: fixed; bottom: 30px; right: 30px; z-index: 1000; }
+
+.whatsapp-btn { width: 60px; height: 60px; background: #25D366; color: #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; box-shadow: none; transition: var(--transition); text-decoration: none; }
+
+.whatsapp-btn:hover { background: #128C7E; transform: scale(1.1); }
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  .hero { padding: 44px 0 60px; min-height: auto; }
+  .hero-container { grid-template-columns: 1fr; gap: 40px; text-align: center; }
+  .hero-title { font-size: 2.8rem; }
+  .hero-buttons { justify-content: center; }
+  .intro-grid { grid-template-columns: 1fr; gap: 30px; }
+  .products-grid { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+  .whatsapp-float { bottom: 20px; right: 20px; }
+  .whatsapp-btn { width: 50px; height: 50px; font-size: 1.2rem; }
+}
+
+@media (max-width: 480px) {
+  .hero-title { font-size: 2.2rem; }
+  .hero-subtitle { font-size: 1.1rem; }
+  .hero-buttons { flex-direction: column; align-items: center; }
+  .intro-card { padding: 30px 20px; }
+  .products-grid { grid-template-columns: 1fr; }
+}
