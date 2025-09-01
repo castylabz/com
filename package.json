@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Professional 3D printing services website",
   "private": true,
-  "homepage": "https://castylabz.github.io/com",
+  "homepage": ".",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
