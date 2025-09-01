@@ -304,6 +304,18 @@ export const products = [
       imgFile("Fidget Click Flick Swoosh 1.png"),
       imgFile("Fidget Click Flick Swoosh 2.png")
     ]
+  },
+  {
+    id: 65,
+    name: "Pixel Heart Fidget",
+    description: "A playful heart-shaped fidget toy with tactile pixel blocks that move and click for endless fidgeting fun. Great for stress relief, relaxation, or simply adding a little joy to your desk—perfect for hands that love to stay busy!",
+    category: "fidget",
+    image: imgFile("Pixel Heart Fidget 0.png"),
+    images: [
+      imgFile("Pixel Heart Fidget 1.png"),
+      imgFile("Pixel Heart Fidget 2.png"),
+      imgFile("Pixel Heart Fidget 3.png")
+    ]
   }
 ];
 
