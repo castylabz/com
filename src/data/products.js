@@ -1,4 +1,4 @@
-const imgFile = (name) => `${process.env.PUBLIC_URL}/images/${name}`;
+const imgFile = (name) => `/images/${name}`;
 
 export const products = [
   // Keychains Category
