@@ -30,10 +30,9 @@ const ProductDetail = () => {
   const firstImage = images[0];
 
   const getDetailUrl = () => {
-    const isAbsolute = process.env.PUBLIC_URL && process.env.PUBLIC_URL.startsWith('http');
-    const base = isAbsolute ? process.env.PUBLIC_URL : window.location.origin + (process.env.PUBLIC_URL || '');
-    const normalized = base.replace(/\/$/, '');
-    return `${normalized}/products/${product.id}`;
+    // For HashRouter, use the current origin with hash navigation
+    const base = window.location.origin + window.location.pathname;
+    return `${base}#/products/${product.id}`;
   };
 
   const handleWhatsApp = () => {
