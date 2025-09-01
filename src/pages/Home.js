@@ -2,12 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { products } from '../data/products';
 import ProductCard from '../components/ProductCard';
-import { useScrollToTop } from '../hooks/useScrollToTop';
 import './Home.css';
 
 const Home = () => {
-  // Use custom hook to scroll to top
-  useScrollToTop();
 
   // Get featured products (first 3 products)
   const featuredProducts = products.slice(0, 3);
@@ -39,8 +36,8 @@ const Home = () => {
           </div>
           <div className="hero-image">
             <img 
-              src="https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
-              alt="3D Printing Process" 
+              src={`${process.env.PUBLIC_URL}/images/bambu-a1.png`} 
+              alt="Bambu Lab A1 3D Printer" 
               className="hero-img"
             />
           </div>

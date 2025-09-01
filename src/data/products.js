@@ -1,4 +1,8 @@
-const imgFile = (name) => `/images/${name}`;
+const imgFile = (name) => {
+  // Use PUBLIC_URL which will be empty in development and contain the path in production
+  const basePath = process.env.PUBLIC_URL || '';
+  return `${basePath}/images/${name}`;
+};
 
 export const products = [
   // Keychains Category
@@ -291,11 +295,15 @@ export const products = [
   },
   {
     id: 13,
-    name: "Prototype Development",
-    description: "Professional prototype printing for inventors and businesses",
+    name: "Fidget Click Flick Swoosh",
+    description: "Fidget Click Flick Swoosh is the ultimate sensory toy for restless hands—spin, click, and flick for satisfying sounds and movements. Pocket-sized fun for stress relief, focus, or just a burst of playful energy anytime, anywhere.",
     category: "fidget",
-    image: imgFile("prototype-development.jpg"),
-    images: [imgFile("prototype-development.jpg")]
+    image: imgFile("Fidget Click Flick Swoosh 0.png"),
+    images: [
+      imgFile("Fidget Click Flick Swoosh 0.png"),
+      imgFile("Fidget Click Flick Swoosh 1.png"),
+      imgFile("Fidget Click Flick Swoosh 2.png")
+    ]
   }
 ];
 

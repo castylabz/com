@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { products, categories } from '../data/products';
 import ProductCard from '../components/ProductCard';
-import { useScrollToTop } from '../hooks/useScrollToTop';
 import './Products.css';
 
 const Products = () => {
@@ -10,8 +9,6 @@ const Products = () => {
   const [selectedCategory, setSelectedCategory] = useState(() => searchParams.get('category') || 'all');
   const [filteredProducts, setFilteredProducts] = useState(products);
 
-  // Use custom hook to scroll to top
-  useScrollToTop();
 
   useEffect(() => {
     if (selectedCategory === 'all') {
