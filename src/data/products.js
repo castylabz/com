@@ -88,6 +88,17 @@ export const products = [
 
 
   // Decor Category - Using your cat jewelry box images
+  
+  {
+    id: 66,
+    name: "Garage Key Holder",
+    description: "This Garage Key Holder isn't just functional — it's a statement piece for every car lover. Add a touch of garage vibes to your wall & keep your keys safe in the coolest way!",
+    category: "decor",
+    image: imgFile("Hotwheels Garage Key Holder 0.png"),
+    images: [imgFile("Hotwheels Garage Key Holder 0.png"),
+      imgFile("Hotwheels Garage Key Holder 1.png"),
+      imgFile("Hotwheels Garage Key Holder 2.png")]
+  },
   {
     id: 5,
     name: "Cat Jewelry Box",
