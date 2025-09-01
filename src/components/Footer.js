@@ -53,7 +53,7 @@ const Footer = () => {
           <div className="footer-section">
             <h4>Contact Info</h4>
             <p>
-              <i className="fab fa-whatsapp"></i> WhatsApp: +91 505 629 86
+                              <i className="fab fa-whatsapp"></i> WhatsApp: 915 056 2986
             </p>
             <p>
               <i className="fab fa-instagram"></i> 

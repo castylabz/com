@@ -34,7 +34,7 @@ const Contact = () => {
                   </div>
                   <div className="contact-details">
                     <h3>WhatsApp</h3>
-                    <p>+91 505 629 86</p>
+                                         <p>91 915 056 2986</p>
                     <a 
                       href="https://wa.me/9150562986?text=Hi! I'm interested in your 3D printing services." 
                       className="btn btn-whatsapp"
