@@ -30,21 +30,32 @@ const ProductDetail = () => {
   const firstImage = images[0];
 
   const getDetailUrl = () => {
-    // For HashRouter, use the current origin with hash navigation
-    const base = window.location.origin + window.location.pathname;
-    return `${base}#/products/${product.id}`;
+    // For GitHub Pages with HashRouter
+    const origin = window.location.origin;
+    const pathname = window.location.pathname; // This will be '/com/' on GitHub Pages
+    return `${origin}${pathname}#/products/${product.id}`;
   };
 
   const handleWhatsApp = () => {
     const detailUrl = getDetailUrl();
-    const message = `Hi! I'm interested in the ${product.name}.\n\nProduct page: ${detailUrl}\nImage: ${firstImage}`;
+    // Create absolute image URL for sharing
+    const imageUrl = firstImage.startsWith('http') 
+      ? firstImage 
+      : `${window.location.origin}${window.location.pathname.replace(/\/$/, '')}${firstImage}`;
+    
+    const message = `Hi! I'm interested in the ${product.name}.\n\nProduct page: ${detailUrl}\nImage: ${imageUrl}`;
     const url = `https://wa.me/9150562986?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
   };
 
   const handleInstagram = async () => {
     const detailUrl = getDetailUrl();
-    const message = `Hi! I'm interested in the ${product.name}.\n\nProduct page: ${detailUrl}\nImage: ${firstImage}`;
+    // Create absolute image URL for sharing
+    const imageUrl = firstImage.startsWith('http') 
+      ? firstImage 
+      : `${window.location.origin}${window.location.pathname.replace(/\/$/, '')}${firstImage}`;
+      
+    const message = `Hi! I'm interested in the ${product.name}.\n\nProduct page: ${detailUrl}\nImage: ${imageUrl}`;
     try {
       await navigator.clipboard.writeText(message);
     } catch (e) {}
