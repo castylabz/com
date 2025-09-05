@@ -48,6 +48,8 @@
   background: var(--light-grey);
   border-radius: var(--border-radius);
   transition: var(--transition);
+  align-items: center
+  
 }
 
 .contact-method:hover {

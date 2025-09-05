@@ -255,6 +255,31 @@ export const products = [
     ]
   },
 
+  {
+    id: 65,
+    name: "Romantic Couple Decorative",
+    description: "Celebrate love with this elegant heart-shaped couple sculpture. Perfect for home décor or as a romantic gift, it symbolizes unity and connection with a sleek, modern design.",
+    category: "decor",
+    image: imgFile("Romantic Couple Decor 0.png"),
+    images: [imgFile("Romantic Couple Decor 0.png"),
+      imgFile("Romantic Couple Decor 1.png"),
+      imgFile("Romantic Couple Decor 2.png"),
+    ]
+  },
+
+  {
+    id: 67,
+    name: "Doberman Decor",
+    description: "A sleek Doberman decor piece that captures the breed’s strength and poise in a clean, modern silhouette—perfect for shelves, desks, or entryways",
+    category: "decor",
+    image: imgFile("Doberman Decor 0.png"),
+    images: [imgFile("Doberman Decor 0.png"),
+      imgFile("Doberman Decor 1.png"),
+      imgFile("Doberman Decor 2.png"),
+    ]
+  },
+
+
 
   // Gifts Category
   {
