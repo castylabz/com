@@ -256,7 +256,7 @@ export const products = [
   },
 
   {
-    id: 65,
+    id: 68,
     name: "Romantic Couple Decorative",
     description: "Celebrate love with this elegant heart-shaped couple sculpture. Perfect for home décor or as a romantic gift, it symbolizes unity and connection with a sleek, modern design.",
     category: "decor",
