@@ -279,6 +279,18 @@ export const products = [
     ]
   },
 
+    {
+    id: 69,
+    name: "Wolverine Claw Wall Art ",
+    description: "Unleash the power of a legendary hero with this dynamic wall art. Featuring iconic claws and slash marks, it creates a striking 3D illusion of bursting right through your wall. A must-have for fans and a bold statement piece for any room.",
+    category: "decor",
+    image: imgFile("Wolverine Claw Wall art 0.png"),
+    images: [imgFile("Wolverine Claw Wall art 0.png"),
+      imgFile("Wolverine Claw Wall art 1.png"),
+      imgFile("Wolverine Claw Wall art 2.png"),
+    ]
+  },
+
 
 
   // Gifts Category
