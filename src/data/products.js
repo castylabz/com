@@ -99,6 +99,19 @@ export const products = [
       imgFile("Hotwheels Garage Key Holder 1.png"),
       imgFile("Hotwheels Garage Key Holder 2.png")]
   },
+
+      {
+    id: 70,
+    name: "Hotwheels wall mount",
+    description: "Showcase your Hot Wheels collection with this sleek and simple wall stand. Perfect for turning your favorite die-cast cars into stylish wall art, creating a custom display on any wall.",
+    category: "decor",
+    image: imgFile("Hotwheels wall stand 0.png"),
+    images: [imgFile("Hotwheels wall stand 0.png"),
+      imgFile("Hotwheels wall stand 1.png"),
+      imgFile("Hotwheels wall stand 2.png"),
+    ]
+  },
+
   {
     id: 5,
     name: "Cat Jewelry Box",
