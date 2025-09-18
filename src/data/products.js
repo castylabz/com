@@ -29,19 +29,19 @@ export const products = [
   },
 
   {
-    id: 57,
+    id: 3,
     name: "Pokeball Keychain",
     description: "Catch your favorites on the go with this Pokeball Keychain! Lightweight, durable, and perfect for adding a touch of adventure to your keys, bags, or backpacks. A must-have accessory for every fan and collector.",
     category: "keychains",
     image: imgFile("Pokeball Keychain 0.png"),
     images: [imgFile("Pokeball Keychain 0.png"),
       imgFile("Pokeball Keychain  1.png"),
-      imgFile("Pokeball Keychain  2.png")]
+      imgFile("Pokeball Keychain 2.png")]
   },
 
   // Lamps Category
   {
-    id: 3,
+    id: 4,
     name: "Bunny LED Tealight Holder",
     description: "Brighten your space with our adorable Bunny Tealight Holder. Its charming design adds a touch of whimsical warmth to any room. Simply place a tealight inside to create a cozy, inviting glow. A perfect little accent for any shelf or table.",
     category: "lamps",
@@ -51,7 +51,7 @@ export const products = [
     imgFile("Bunny tealight holder 3.png")]
   },
   {
-    id: 4,
+    id: 5,
     name: "Twist Lamp",
     description: "Illuminate your space with the fluid design of our Twist Table Lamp. Its sculptural form casts a warm, soft glow, creating an atmosphere of modern elegance. ",
     category: "lamps",
@@ -62,7 +62,7 @@ export const products = [
     ]
   },
   {
-    id: 14,
+    id: 6,
     name: "Japanese Kumiko Lamp",
     description: "Bring a touch of Japan to your home with this Japanese Kumiko Lamp. Its intricate, handcrafted lattice casts mesmerizing patterns of warm, ambient light—perfect for creating a peaceful, elegant atmosphere in any room. ",
     category: "lamps",
@@ -73,7 +73,7 @@ export const products = [
     ]
   },
   {
-    id: 15,
+    id: 7,
     name: "Honeycomb Lamp",
     description: "Illuminate your space with the Honeycomb Lamp—a modern cylindrical lamp featuring a geometric honeycomb pattern that casts warm, ambient light. Its eye-catching design adds a touch of contemporary elegance to any room, making it perfect for desks, bedside tables, or cozy corners.",
     category: "lamps",
@@ -90,7 +90,7 @@ export const products = [
   // Decor Category - Using your cat jewelry box images
   
   {
-    id: 66,
+    id: 8,
     name: "Garage Key Holder",
     description: "This Garage Key Holder isn't just functional — it's a statement piece for every car lover. Add a touch of garage vibes to your wall & keep your keys safe in the coolest way!",
     category: "decor",
@@ -101,7 +101,7 @@ export const products = [
   },
 
       {
-    id: 70,
+    id: 9,
     name: "Hotwheels wall mount",
     description: "Showcase your Hot Wheels collection with this sleek and simple wall stand. Perfect for turning your favorite die-cast cars into stylish wall art, creating a custom display on any wall.",
     category: "decor",
@@ -113,7 +113,7 @@ export const products = [
   },
 
   {
-    id: 5,
+    id: 10,
     name: "Cat Jewelry Box",
     description: "Beautiful and elegant cat-shaped jewelry box with intricate details",
     category: "decor",
@@ -126,7 +126,7 @@ export const products = [
     ]
   },
   {
-    id: 56,
+    id: 11,
     name: "Home Sweet Home Decoration",
     description: "A welcoming “Home Sweet Home” wall hanging in a cozy house silhouette, complete with flowing script and a heart accent—perfect for entryways, living rooms, or as a thoughtful housewarming gift.",
     category: "decor",
@@ -138,7 +138,7 @@ export const products = [
   },
 
   {
-    id: 55,
+    id: 12,
     name: "Halloween Ghost decor",
     description: "Spooky-cute Ghost Lamp that casts a soft, cozy glow—perfect for Halloween vibes, kids’ rooms, or a playful accent on shelves and bedside tables.",
     category: "decor",
@@ -150,7 +150,7 @@ export const products = [
     ]
   },
   {
-    id: 7,
+    id: 13,
     name: "No Evil Trio",
     description: "See no evil, hear no evil, speak no evil—meet the No Evil Trio. Minimal art with maximum calm for shelves, desks, and mindful corners tap to add serenity to the space today.",
     category: "decor",
@@ -162,7 +162,7 @@ export const products = [
     ]
   },
   {
-    id: 8,
+    id: 14,
     name: "Hoodie Pen Holder ",
     description: "Keep your desk stylish and organized with this Hoodie Pen Holder. Its playful hoodie design adds personality to any workspace while neatly storing pens, pencils, and markers. A fun and functional accessory for students, creatives, or office setups.",
     category: "decor",
@@ -174,7 +174,7 @@ export const products = [
     ]
   },
   {
-    id: 9,
+    id: 15,
     name: "Tealight Star",
     description: "Light up your space with the Tealight Star—a modern star-shaped holder that creates a warm, cozy glow with any tealight. Its unique cutout design and textured pattern add a touch of charm to shelves, tables, or festive displays. Perfect for brightening up any moment.",
     category: "decor",
@@ -186,7 +186,7 @@ export const products = [
   },
 
   {
-    id: 58,
+    id: 16,
     name: "Batman LED Lightbox",
     description: "Illuminate your space with the iconic Batman LED Lightbox—a sleek, modern lightbox featuring the legendary Dark Knight logo that casts a dramatic, ambient glow. Perfect for Batman fans, gaming rooms, or adding superhero flair to any space. The LED technology ensures long-lasting, energy-efficient illumination.",
     category: "decor",
@@ -198,7 +198,7 @@ export const products = [
   },
 
   {
-    id: 59,
+    id: 17,
     name: " Graceful Antelope Sculpture",
     description: "Minimalist elegance meets modern design. Our 3D Printed Gazelle Sculpture is the perfect centerpiece for your home or office - bold, sleek, and timeless. Available in multiple colors to suit your style",
     category: "decor",
@@ -210,7 +210,7 @@ export const products = [
   },
 
   {
-    id: 60,
+    id: 18,
     name: "Jewelry box",
     description: "Organize in style! Our sleek Jewelry Box with multiple tray designs keeps your treasures safe & beautifully arranged. Perfect for rings, earrings, bracelets & more. ",
     category: "decor",
@@ -222,7 +222,7 @@ export const products = [
   },
 
   {
-    id: 61,
+    id: 19,
     name: "hexagon tree wall art",
     description: "Bring nature indoors This stunning Tree Hexagon Wall Art turns any wall into a piece of art!",
     category: "decor",
@@ -234,7 +234,7 @@ export const products = [
 
   
   {
-    id: 62,
+    id: 20,
     name: "Eiffel Tower wall art",
     description: "Bring Paris to Your Walls! Transform your space with this stunning Eiffel Tower wall art – a perfect blend of elegance & modern decor.  Make your home feel like the City of Lights!",
     category: "decor",
@@ -245,7 +245,7 @@ export const products = [
   },
 
   {
-    id: 63,
+    id: 21,
     name: "Wall Planter With Hidden Drip Dray",
     description: "Elevate your greenery with this modern wall planter featuring a textured design and a cleverly concealed drip tray. The innovative drainage keeps roots healthy and surfaces dry, making plant care easy and mess-free—perfect for adding a fresh touch to any wall in your home or office.",
     category: "decor",
@@ -257,7 +257,7 @@ export const products = [
   },
 
   {
-    id: 64,
+    id: 22,
     name: "Christmas House Kit Card",
     description: "Build holiday magic with this easy-to-assemble Christmas House Kit Card. Create a charming miniature house that glows warmly, perfect for festive decor or gifting. Simple, fun, and memorable—add a little wonder to your celebrations!",
     category: "decor",
@@ -269,7 +269,7 @@ export const products = [
   },
 
   {
-    id: 68,
+    id: 23,
     name: "Romantic Couple Decorative",
     description: "Celebrate love with this elegant heart-shaped couple sculpture. Perfect for home décor or as a romantic gift, it symbolizes unity and connection with a sleek, modern design.",
     category: "decor",
@@ -281,7 +281,7 @@ export const products = [
   },
 
   {
-    id: 67,
+    id: 24,
     name: "Doberman Decor",
     description: "A sleek Doberman decor piece that captures the breed’s strength and poise in a clean, modern silhouette—perfect for shelves, desks, or entryways",
     category: "decor",
@@ -293,7 +293,7 @@ export const products = [
   },
 
     {
-    id: 69,
+    id: 25,
     name: "Wolverine Claw Wall Art ",
     description: "Unleash the power of a legendary hero with this dynamic wall art. Featuring iconic claws and slash marks, it creates a striking 3D illusion of bursting right through your wall. A must-have for fans and a bold statement piece for any room.",
     category: "decor",
@@ -308,7 +308,7 @@ export const products = [
 
   // Gifts Category
   {
-    id: 10,
+    id: 26,
     name: "Mother's Day Statue",
     description: "Celebrate love and gratitude with this elegant Mother's Day Statue. Featuring a minimalist figure holding a heart, it’s the perfect symbol of affection—an unforgettable gift to show Mom how much she means to you",
     category: "gifts",
@@ -319,7 +319,7 @@ export const products = [
     ]
   },
   {
-    id: 11,
+    id: 27,
     name: "Hugging Couple Statue",
     description: "Romantic Couple Sculpture | Minimalist Love Statue | Anniversary Gift For Couples | Wedding Gifts | Modern Figurine | Desk Ornament Wall Art",
     category: "gifts",
@@ -330,6 +330,7 @@ export const products = [
     ]
   },
   {
+    id: 28,
     name: "customizable Infinity Name Stand",
     description: "Celebrate endless love with this personalized Infinity Wedding Gift. Customizable with names and a special date, it’s the perfect keepsake for weddings, anniversaries, or engagements—a symbol of forever for any couple.",
     category: "gifts",
@@ -343,7 +344,7 @@ export const products = [
 
   // Fidget Category (renamed from Custom Orders)
   {
-    id: 12,
+    id: 29,
     name: "Twisty Fidget Vase",
     description: "The Twisty Vase is a decorative fidget toy where several interlocking pieces slide along a spiral. Each member has a limit to hold them from sliding too far. It is fun to play and makes for a nice modern decoration!",
     category: "fidget",
@@ -355,7 +356,7 @@ export const products = [
     ]
   },
   {
-    id: 13,
+    id: 30,
     name: "Fidget Click Flick Swoosh",
     description: "Fidget Click Flick Swoosh is the ultimate sensory toy for restless hands—spin, click, and flick for satisfying sounds and movements. Pocket-sized fun for stress relief, focus, or just a burst of playful energy anytime, anywhere.",
     category: "fidget",
@@ -367,7 +368,7 @@ export const products = [
     ]
   },
   {
-    id: 65,
+    id: 31,
     name: "Pixel Heart Fidget",
     description: "A playful heart-shaped fidget toy with tactile pixel blocks that move and click for endless fidgeting fun. Great for stress relief, relaxation, or simply adding a little joy to your desk—perfect for hands that love to stay busy!",
     category: "fidget",

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { products, categories } from '../data/products';
 import ProductCard from '../components/ProductCard';
+import SplashCursor from '../components/SplashCursor';
 import './Products.css';
 
 const Products = () => {
@@ -27,8 +28,12 @@ const Products = () => {
     }
   };
 
+  // Check if device is mobile
+  const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
   return (
     <>
+      {!isMobile && <SplashCursor />}
       {/* Products Header */}
       <section className="products-header">
         <div className="container">

@@ -2,6 +2,7 @@ import React, { useMemo, useState } from 'react';
 import { useParams, Link, useLocation } from 'react-router-dom';
 import { products } from '../data/products';
 import { useScrollToTop } from '../hooks/useScrollToTop';
+import SplashCursor from '../components/SplashCursor';
 import './ProductDetail.css';
 
 const ProductDetail = () => {
@@ -62,10 +63,14 @@ const ProductDetail = () => {
     window.open('https://www.instagram.com/casty_labz/', '_blank');
   };
 
-  const fallbackImage = 'data:image/svg+xml;utf8,%3Csvg xmlns=%22http%3A//www.w3.org/2000/svg%22 width=%22500%22 height=%22375%22 viewBox=%220 0 500 375%22%3E%3Crect width=%22500%22 height=%22375%22 fill=%22%23f2f2f2%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%23999 font-family=%22Arial%2Csans-serif%22 font-size=%2220%22%3ENo image%3C/text%3E%3C/svg%3E';
+  const fallbackImage = 'data:image/svg+xml;utf8,%3Csvg xmlns=%22http%3A//www.w3.org/2000/svg%22 width=%22500%22 height=%22375%22 viewBox=%220 0 500 375%22%3E%3Crect width=%22500%22 height=%22375%22 fill=%22%23f2f2f2%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23999%22 font-family=%22Arial%2Csans-serif%22 font-size=%2220%22%3ENo image%3C/text%3E%3C/svg%3E';
+
+  // Check if device is mobile
+  const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
   return (
     <section className="product-detail">
+      {!isMobile && <SplashCursor />}
       <div className="container">
         <div className="breadcrumbs">
           <Link to="/">Home</Link> / <Link to={`/products${currentCategory && currentCategory !== 'all' ? `?category=${encodeURIComponent(currentCategory)}` : ''}`}>Products</Link> / <span>{product.name}</span>

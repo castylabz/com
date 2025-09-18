@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: 'Comic Relief', 'Delius Swash Caps', 'Pacifico', 'Poppins', Arial, sans-serif;

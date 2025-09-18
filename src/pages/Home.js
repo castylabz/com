@@ -1,10 +1,29 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { products } from '../data/products';
 import ProductCard from '../components/ProductCard';
 import './Home.css';
+import Galaxy from '../components/ui/Galaxy';
+import SpotlightCard from '../components/ui/SpotlightCard';
 
 const Home = () => {
+  const [isDesktop, setIsDesktop] = useState(true);
+
+  useEffect(() => {
+    const checkDevice = () => {
+      const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      setIsDesktop(!isMobile);
+    };
+
+    checkDevice();
+    
+    // Also check on window resize
+    window.addEventListener('resize', checkDevice);
+    
+    return () => {
+      window.removeEventListener('resize', checkDevice);
+    };
+  }, []);
 
   // Get featured products (first 3 products)
   const featuredProducts = products.slice(0, 3);
@@ -13,6 +32,7 @@ const Home = () => {
     <>
       {/* Hero Section */}
       <section className="hero">
+        {isDesktop && <Galaxy transparent twinkleIntensity={0.4} hueShift={200} />}
         <div className="hero-container">
           <div className="hero-content">
             <h1 className="hero-title">Transform Your Ideas Into Reality</h1>
@@ -50,27 +70,27 @@ const Home = () => {
           <div className="intro-content">
             <h2 className="section-title">Why Choose Our 3D Printing Services?</h2>
             <div className="intro-grid">
-              <div className="intro-card">
+              <SpotlightCard className="intro-card" spotlightColor="rgba(75, 0, 130, 0.3)">
                 <div className="intro-icon">
                   <i className="fas fa-clock"></i>
                 </div>
                 <h3>Fast Turnaround</h3>
                 <p>Quick printing times with detailed time estimates for every project</p>
-              </div>
-              <div className="intro-card">
+              </SpotlightCard>
+              <SpotlightCard className="intro-card" spotlightColor="rgba(75, 0, 130, 0.3)">
                 <div className="intro-icon">
                   <i className="fas fa-gem"></i>
                 </div>
                 <h3>Premium Quality</h3>
                 <p>High-grade PLA materials ensuring durability and perfect finish</p>
-              </div>
-              <div className="intro-card">
+              </SpotlightCard>
+              <SpotlightCard className="intro-card" spotlightColor="rgba(75, 0, 130, 0.3)">
                 <div className="intro-icon">
                   <i className="fas fa-palette"></i>
                 </div>
                 <h3>Custom Designs</h3>
                 <p>Personalized creations tailored to your specific requirements</p>
-              </div>
+              </SpotlightCard>
             </div>
           </div>
         </div>
