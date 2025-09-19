@@ -1,30 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { products } from '../data/products';
 import ProductCard from '../components/ProductCard';
 import './Home.css';
-import Galaxy from '../components/ui/Galaxy';
 import SpotlightCard from '../components/ui/SpotlightCard';
 
 const Home = () => {
-  const [isDesktop, setIsDesktop] = useState(true);
-
-  useEffect(() => {
-    const checkDevice = () => {
-      const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-      setIsDesktop(!isMobile);
-    };
-
-    checkDevice();
-    
-    // Also check on window resize
-    window.addEventListener('resize', checkDevice);
-    
-    return () => {
-      window.removeEventListener('resize', checkDevice);
-    };
-  }, []);
-
   // Get featured products (first 3 products)
   const featuredProducts = products.slice(0, 3);
 
@@ -32,7 +13,6 @@ const Home = () => {
     <>
       {/* Hero Section */}
       <section className="hero">
-        {isDesktop && <Galaxy transparent twinkleIntensity={0.4} hueShift={200} />}
         <div className="hero-container">
           <div className="hero-content">
             <h1 className="hero-title">Transform Your Ideas Into Reality</h1>
