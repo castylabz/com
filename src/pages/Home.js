@@ -3,9 +3,10 @@ import { Link } from 'react-router-dom';
 import { products } from '../data/products';
 import ProductCard from '../components/ProductCard';
 import './Home.css';
-import SpotlightCard from '../components/ui/SpotlightCard';
+// Galaxy component import removed
 
 const Home = () => {
+
   // Get featured products (first 3 products)
   const featuredProducts = products.slice(0, 3);
 
@@ -13,6 +14,7 @@ const Home = () => {
     <>
       {/* Hero Section */}
       <section className="hero">
+        {/* Galaxy component removed */}
         <div className="hero-container">
           <div className="hero-content">
             <h1 className="hero-title">Transform Your Ideas Into Reality</h1>
@@ -50,27 +52,27 @@ const Home = () => {
           <div className="intro-content">
             <h2 className="section-title">Why Choose Our 3D Printing Services?</h2>
             <div className="intro-grid">
-              <SpotlightCard className="intro-card" spotlightColor="rgba(75, 0, 130, 0.3)">
+              <div className="intro-card">
                 <div className="intro-icon">
                   <i className="fas fa-clock"></i>
                 </div>
                 <h3>Fast Turnaround</h3>
                 <p>Quick printing times with detailed time estimates for every project</p>
-              </SpotlightCard>
-              <SpotlightCard className="intro-card" spotlightColor="rgba(75, 0, 130, 0.3)">
+              </div>
+              <div className="intro-card">
                 <div className="intro-icon">
                   <i className="fas fa-gem"></i>
                 </div>
                 <h3>Premium Quality</h3>
                 <p>High-grade PLA materials ensuring durability and perfect finish</p>
-              </SpotlightCard>
-              <SpotlightCard className="intro-card" spotlightColor="rgba(75, 0, 130, 0.3)">
+              </div>
+              <div className="intro-card">
                 <div className="intro-icon">
                   <i className="fas fa-palette"></i>
                 </div>
                 <h3>Custom Designs</h3>
                 <p>Personalized creations tailored to your specific requirements</p>
-              </SpotlightCard>
+              </div>
             </div>
           </div>
         </div>

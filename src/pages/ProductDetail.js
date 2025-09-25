@@ -2,7 +2,7 @@ import React, { useMemo, useState } from 'react';
 import { useParams, Link, useLocation } from 'react-router-dom';
 import { products } from '../data/products';
 import { useScrollToTop } from '../hooks/useScrollToTop';
-import SplashCursor from '../components/SplashCursor';
+// SplashCursor import removed
 import './ProductDetail.css';
 
 const ProductDetail = () => {
@@ -70,7 +70,7 @@ const ProductDetail = () => {
 
   return (
     <section className="product-detail">
-      {!isMobile && <SplashCursor />}
+      {/* SplashCursor component removed */}
       <div className="container">
         <div className="breadcrumbs">
           <Link to="/">Home</Link> / <Link to={`/products${currentCategory && currentCategory !== 'all' ? `?category=${encodeURIComponent(currentCategory)}` : ''}`}>Products</Link> / <span>{product.name}</span>

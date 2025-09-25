@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { products, categories } from '../data/products';
 import ProductCard from '../components/ProductCard';
-import SplashCursor from '../components/SplashCursor';
+// SplashCursor import removed
 import './Products.css';
 
 const Products = () => {
@@ -33,7 +33,7 @@ const Products = () => {
 
   return (
     <>
-      {!isMobile && <SplashCursor />}
+      {/* SplashCursor component removed */}
       {/* Products Header */}
       <section className="products-header">
         <div className="container">
