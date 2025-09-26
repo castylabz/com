@@ -382,7 +382,7 @@ export const products = [
 
     {
     id: 32,
-    name: "Pixel Heart Fidget",
+    name: "AK-47 Vulcan Rubber Band Gun",
     description: "Bring action to playtime with the AK-47 Vulcan Rubber Band Gun—a detailed, eye-catching replica designed for safe, exciting rubber band battles. Lightweight, durable, and fun for collectors or imaginative games.AK-47 Vulcan Rubber Band Gun is a detailed replica designed for safe rubber band battles. Lightweight and fun for display, cosplay, or bringing excitement to any game—perfect for collectors and enthusiasts alike.",
     category: "decor",
     image: imgFile("AK-47 0.png"),
